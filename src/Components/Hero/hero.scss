@@ -4,25 +4,81 @@
 }
 .hero{
     .hero-text{
-        margin-top: 10%;
+        padding-top: 10%;
+        padding-left: 3rem;
+        padding-bottom: 8%;
         .masker{
             width: 50%;
             display: flex;
-            align-items: center;
+            align-items: end;
             justify-content: space-between;
+            width: 48%;
         }
         .hero-box{
-            background: red;
+            background: url('../../assets/content-image01.jpg') no-repeat;
+            background-size: cover;
             width: 20%;
             height: 5rem;
-            border-radius: 1rem;
+            border-radius: .7rem;
         }
         h1{
             font-family: b;
             font-weight: 600;
             line-height: 120px;
-            font-size: 10rem;
+            font-size: 8rem;
             color: #212121;
+            line-height: 75%;
+            letter-spacing: 0;
+        }
+    }
+    .hero-btm{
+        font-family: a;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 3rem;
+        
+        .btm-left{
+            p{
+                font-size: 1rem;
+                color: #212121;
+            }
+        }
+        .btm-center{
+            p{
+                font-size: 1rem;
+                color: #212121;
+            }
+        }
+        .btm-right{
+            width: 16%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            button{
+                background: transparent;
+                outline: none;
+                color: #212121;
+                padding: .4rem .7rem;
+                border:1px solid #212121;
+                border-radius: 15px;
+                transition: .2s all;
+            }
+            button:hover{
+                background: #212121;
+                color: #f1f1f1;
+            }
+            .arrow{
+                width: 2rem;
+                height: 2rem;
+                border-radius: 50%;
+                border:1px solid #212121;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                rotate: 45deg;
+            }
         }
     }
 }

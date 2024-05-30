@@ -1,3 +1,4 @@
+import { IoIosArrowRoundUp } from "react-icons/io";
 import './hero.scss'
 
 function Hero() {
@@ -14,6 +15,21 @@ function Hero() {
         </div>
         <div className="masker">
             <h1>PRESENTATIONS</h1>
+        </div>
+      </div>
+      <hr />
+      <div className="hero-btm">
+        <div className="btm-left">
+          <p>For public and private companies</p>
+        </div>
+        <div className="btm-center">
+          <p>From the first pitch to IPO</p>
+        </div>
+        <div className="btm-right">
+          <button>START THE PROJECT</button>
+          <div className="arrow">
+            <IoIosArrowRoundUp size={'1.5rem'}/>
+          </div>
         </div>
       </div>
     </div>
