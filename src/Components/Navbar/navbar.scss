@@ -1,0 +1,35 @@
+@font-face {
+    font-family: a;
+    src: url('../../assets/fonts/NeueMontreal-Regular.woff');
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    padding: 1.5rem 3.5rem;
+
+    .links{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a{
+            text-decoration: none;
+            color: #212121;
+            font-family: a;
+            font-weight: 400;
+            font-size: 1.3rem;
+            line-height: 24px;
+        }
+
+        a:nth-child(5){
+            margin-left: 18rem;
+        }
+    }
+}
