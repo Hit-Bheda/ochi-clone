@@ -1,3 +1,4 @@
+@import '../../Styles/globals/_base';
 @font-face {
     font-family: a;
     src: url('../../assets/fonts/NeueMontreal-Regular.woff');
@@ -13,11 +14,35 @@
     left: 0;
     padding: 1rem 3rem;
 
+    @include lg {
+        padding: 1rem 2rem;
+    }
+    .menu-btn{
+        display: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include xl{
+            display: none;
+        }
+        @include lg {
+            display:block;
+        }
+    }
+
     .links{
         width: 50%;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        
+        @include xl{
+            display: flex;
+        }
+        @include lg {
+            display:none;
+        }
+
 
         a{
             text-decoration: none;
@@ -28,8 +53,17 @@
             line-height: 24px;
         }
 
+
         a:nth-child(5){
-            margin-left: 14rem;
+            margin-left: 35%;
+
+            @include xl{
+                margin-left: 20%;
+            }
+            @include lg{
+                margin-left: 10%;
+            }
+
         }
     }
 }

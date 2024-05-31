@@ -18,6 +18,10 @@ function Navbar() {
             <a href='#' key={index}>{item}</a>
         ))}
       </div>
+      <div className="menu-btn">
+        <div className="line1"></div>
+        <div className="line2"></div>
+      </div>
     </div>
   )
 }
