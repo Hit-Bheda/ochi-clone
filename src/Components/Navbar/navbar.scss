@@ -22,12 +22,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        @include xl{
+        @include xxl{
             display: none;
         }
-        @include lg {
-            display:block;
-        }
+        // @include lg {
+        //     display:block;
+        // }
     }
 
     .links{
