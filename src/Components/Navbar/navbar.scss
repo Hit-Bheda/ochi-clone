@@ -17,17 +17,24 @@
     @include lg {
         padding: 1rem 2rem;
     }
+
     .menu-btn{
         display: none;
-        display: flex;
         align-items: center;
-        justify-content: center;
-        @include xxl{
-            display: none;
+        justify-content: space-between;
+        width: 1.2vw;
+        height: 1.2vw;
+
+        @include lg{
+            display: flex;
+            flex-direction: column;
         }
-        // @include lg {
-        //     display:block;
-        // }
+
+        .line1,.line2{
+            width: 3vw;
+            background: #212121;
+            height: 1px;
+        }
     }
 
     .links{
@@ -39,6 +46,7 @@
         @include xl{
             display: flex;
         }
+        
         @include lg {
             display:none;
         }
@@ -53,13 +61,13 @@
             line-height: 24px;
         }
 
-
         a:nth-child(5){
             margin-left: 35%;
 
             @include xl{
                 margin-left: 20%;
             }
+
             @include lg{
                 margin-left: 10%;
             }

@@ -1,12 +1,15 @@
 @use './globals/base';
+
 @font-face {
     font-family: a;
     src: url('../../assets/fonts/NeueMontreal-Regular.woff');
 }
+
 @font-face {
     font-family: b;
     src: url('../../assets/fonts/FoundersGrotesk-Semibold.woff');
 }
+
 .main{
     width: 100vw;
     height: 100vh;
