@@ -1,6 +1,5 @@
-// import React from 'react'
 import Hero from './Components/Hero'
-// import Marquee from './Components/Marquee'
+import Marquee from './Components/Marquee'
 import Navbar from './Components/Navbar'
 import './Styles/style.scss'
 function App() {
@@ -10,7 +9,7 @@ function App() {
         <Navbar />
         <Hero />
       </div>
-      {/* <Marquee /> */}
+      <Marquee />
     </div>
   )
 }
