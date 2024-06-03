@@ -1,30 +1,37 @@
-# React + TypeScript + Vite
+# Ochi Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Ochi Clone project! This repository is a clone of the website [ochi.design](https://ochi.design), built using React and Vite. This project was created for learning purposes, aiming to replicate the design and functionality of the original website while providing a solid foundation for further development and customization.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+To get started with the project, follow these simple steps:
 
-- Configure the top-level `parserOptions` property like this:
+1. **Clone the repository**:
+    ```sh
+    git clone https://github.com/Hit-Bheda/ochi-clone.git
+    cd ochi-clone
+    ```
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+2. **Install dependencies**:
+    Make sure you have [Node.js](https://nodejs.org/) installed. Then run:
+    ```sh
+    npm install
+    ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+3. **Run the development server**:
+    ```sh
+    npm run dev
+    ```
+
+Your app should now be running on [http://localhost:5173](http://localhost:5173).
+
+## Usage
+
+Once the development server is running, you can view the Ochi Clone in your browser. Any changes you make to the source code will be automatically reflected in the browser thanks to hot reloading.
