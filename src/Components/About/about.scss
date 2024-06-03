@@ -1,0 +1,107 @@
+
+.about{
+    background: #CDEA68;
+    padding-top: 7vw;
+    font-family:  a;
+    font-weight: 400;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    .top-text {
+        padding-bottom: 4vw;
+        border-bottom: 1px solid #21212155;
+        h1{
+            padding: 0 3rem ;
+            padding-right: 12rem;
+            font-weight: 400;
+            font-size: 3.3rem;
+            color: #212121;
+            line-height: 100%;
+            span{
+                text-decoration: underline;
+                text-decoration-thickness: 3px;
+                cursor: pointer;
+            }
+        }
+    }
+    .middle-text{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 3rem;
+        border-bottom: 1px solid #21212155;
+        .about-left,.about-right{
+            width: 50%;
+            height: 50vh;
+        }
+        .about-right{
+            display: flex;
+            justify-content: space-between;
+            .sub-left{
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                p{
+                    padding-bottom: 3vw;
+                    font-size: 1rem;
+                    color: #212121;
+                    width: 90%;
+                    line-height: 140%;
+                }
+            }
+            .sub-right{
+                width: 35%;
+                display: flex;
+                align-items: start;
+                flex-direction: column;
+                justify-content: center;
+                .social-heading{
+                    padding-bottom: 2vw;
+                }
+                .socials{
+                    display: flex;
+                    flex-direction: column;
+                    a{
+                        color: #212121;
+                        padding: 2px;
+                    }
+                }
+            }
+        }
+    }
+    .bottom-text{
+        height: 70vh;
+        display: flex;
+        padding: 1rem 3rem;
+        .bottom-left{
+            width: 50%;
+            h1{
+                font-size: 3.5rem;
+                color: #212121;
+                font-weight: 500;
+                padding-bottom: 1rem;
+            }
+            button{
+                background: #212121;
+                outline: none;
+                color: #f2f2f2;
+                padding: 1.1rem 2.5rem;
+                border:1px solid #212121;
+                border-radius: 2rem;
+                transition: .2s all;
+            }
+        }
+        .bottom-right{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            .img-box{
+                width: 46vw;
+                height: 65vh;
+                background: url('../../assets/Homepage-Photo-1326x939.jpg') no-repeat;
+                background-size: cover;
+                border-radius: 1rem;
+            }
+        }
+    }
+}

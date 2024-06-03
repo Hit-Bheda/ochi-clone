@@ -1,3 +1,4 @@
+import About from './Components/About'
 import Hero from './Components/Hero'
 import Marquee from './Components/Marquee'
 import Navbar from './Components/Navbar'
@@ -10,6 +11,7 @@ function App() {
         <Hero />
       </div>
       <Marquee />
+      <About />
     </div>
   )
 }
