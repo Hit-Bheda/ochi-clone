@@ -6,8 +6,6 @@ Welcome to the Ochi Clone project! This repository is a clone of the website [oc
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
