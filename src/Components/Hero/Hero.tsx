@@ -1,7 +1,19 @@
 import { IoIosArrowRoundUp } from "react-icons/io";
 import './hero.scss'
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap/gsap-core";
 
 function Hero() {
+  const heroBox = useRef<HTMLDivElement>(null);
+  useEffect(()=>{
+    const curruntHeroBox = heroBox.current;
+    if(curruntHeroBox){
+      gsap.to(curruntHeroBox ,{
+        width:'10vw',
+        delay:2
+      })
+    }
+  })
   return (
     <div className='hero'>
       <div className="hero-text">
@@ -9,7 +21,7 @@ function Hero() {
             <h1>WE CREATE</h1>
         </div>
         <div className="masker">
-            <div className="hero-box">
+            <div className="hero-box" ref={heroBox}>
             </div>
             <h1>EYE-OPENING</h1>
         </div>

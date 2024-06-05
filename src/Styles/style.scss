@@ -2,12 +2,14 @@
 
 @font-face {
     font-family: a;
-    src: url('../../assets/fonts/NeueMontreal-Regular.woff');
+    src: url('../../assets/fonts/NeueMontreal-Regular.woff') format('woff');
+    font-display: swap;
 }
 
 @font-face {
     font-family: b;
-    src: url('../../assets/fonts/FoundersGrotesk-Semibold.woff');
+    src: url('../../assets/fonts/FoundersGrotesk-Semibold.woff') format('woff');
+    font-display: swap;
 }
 
 .main{
@@ -15,5 +17,9 @@
     height: 100vh;
     background: #F1F1F1;
     position: relative;
+}
+
+.home-page{
+    opacity: 0;
 }
 

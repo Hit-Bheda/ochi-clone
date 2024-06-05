@@ -1,6 +1,51 @@
+import { useEffect, useState } from 'react'
 import './navbar.scss'
+import {gsap} from 'gsap';
 
 function Navbar() {
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [isScrollingUp, setIsScrollingUp] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY) {
+        setIsScrollingUp(false);
+      } else {
+        setIsScrollingUp(true);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [lastScrollY]);
+
+  useEffect(() => {
+    const nav = document.querySelector('.navbar');
+
+    if (nav) {
+      if (isScrollingUp) {
+        gsap.to(nav, {
+          duration: 0.2,
+          ease: 'power1.out',
+          top: '0%',
+          delay: 0
+        });
+      } else {
+        gsap.to(nav, {
+          duration: 0.5,
+          ease: 'power1.inOut',
+          top: '-100%'
+        });
+      }
+    }
+  }, [isScrollingUp]);
     const links = ['Services','Our work','About us','Insights',"Contact us"]
   return (
     <div className="navbar">
