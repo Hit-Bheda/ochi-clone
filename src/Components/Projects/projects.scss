@@ -1,0 +1,105 @@
+.projects{
+    
+    .projects-heading{
+        padding:15vh 3rem 4vh 3rem;
+        border-bottom: 1px solid #21212156;
+        h1{
+            font-family: a;
+            font-size: 3.5rem;
+            font-weight: 400;
+            color: #212121;
+        }
+    }
+    .project-cards{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin: 1rem 3rem;
+    }
+    .btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15vh;
+        .btn-container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 15rem;
+            height: 3rem;
+            padding: 1rem 1.3rem;
+            background: #212121;
+            border-radius: 2rem;
+            cursor: pointer;
+            p{
+                font-family: a;
+                font-weight: 400;
+                font-size: .9rem;
+                color: #f2f2f2;
+                line-height: 0%;
+            }
+            .btn-box{
+                width: .5rem;
+                height: .5rem;
+                border-radius: 50%;
+                background: #f2f2f2;
+            }
+        }
+    }
+}
+
+.card{
+    font-family: a;
+    padding-top: 5vh;
+    .card-body{
+        .card-body-child{
+            justify-self: center;
+            width: 97%;
+            height: 80vh;
+            border-radius: 1rem;
+            transition: .5s all;
+            overflow: hidden;
+            img{
+                width: 100%;
+                transition: .5s all;
+            }img:hover{
+                scale: 1.09;
+            }
+        }
+        .card-body-child:hover{
+            scale: .95;
+        }
+    }
+
+    .card-tags{
+        padding-top:.8rem ;
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        p{
+            padding: .5rem .8rem;
+            border: 1px solid #212121;
+            border-radius: 2rem;
+            font-size: .8rem;
+            cursor: pointer;
+        }
+    }
+
+    .card-heading{
+        padding-bottom: 1rem;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+
+        .dot{
+            width: .5rem;
+            height: .5rem;
+            background: #212121;
+            border-radius: 50%;
+            margin-right: .6rem;
+        }
+        p{
+            font-weight: 100;
+            font-size: .9rem;
+        }
+    }
+}

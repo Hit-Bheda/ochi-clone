@@ -14,7 +14,7 @@ function Navbar() {
       </svg>
       </div>
       <div className="links">
-        {links.map((item,index)=>(
+        {links.map((item:string,index:number)=>(
             <a href='#' key={index}>{item}</a>
         ))}
       </div>
