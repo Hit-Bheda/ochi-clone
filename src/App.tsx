@@ -7,8 +7,14 @@ import Projects from './Components/Projects'
 import VideoSec from './Components/VideoSec'
 import './Styles/style.scss'
 import { gsap } from 'gsap/gsap-core'
+import { ScrollTrigger} from 'gsap/all';
+import { ScrollSmoother } from 'gsap-trial/ScrollSmoother';
+
+gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollSmoother)
 function App() {
   const homePage = useRef<HTMLDivElement>(null);
+  
   useEffect(()=>{
     const curruntHomePage = homePage.current;
     if(curruntHomePage){
@@ -17,9 +23,17 @@ function App() {
         delay:2,
       })
     }
+    ScrollSmoother.create({
+      wrapper: '.main',
+      content: '.scroller',
+      smooth:2,
+      smoothTouch:1
+    })
+    
   })
   return (
     <div className="main">
+      <div className="scroller">
       <div className="home-page" ref={homePage}>
         <Navbar />
         <Hero />
@@ -28,6 +42,7 @@ function App() {
       <About />
       <VideoSec />
       <Projects />
+      </div>
     </div>
   )
 }
